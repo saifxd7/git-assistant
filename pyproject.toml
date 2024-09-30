@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "git-assistant"
+version = "0.1.0"
+description = ""
+authors = ["Saif Shaikh"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.7"
+openai = "^1.50.2"
+python-dotenv = "^1.0.1"
+groq = "^0.11.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+git-assistant = "git_assistant.cli:cli"
